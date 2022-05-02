@@ -1,5 +1,6 @@
 import React from 'react'
 import './SideBar.css'
+import {useNavigate} from "react-router-dom";
 import { RiTwitterFill } from "react-icons/ri";
 import { Icon } from "@iconify/react";
 import dp from "../../assets/images/IMG_dp.jpg"
@@ -7,6 +8,13 @@ import status from "../../assets/images/icons8-goal-16.png"
 
 {/* <Icon icon="codicon:mail" width="16" inline={true} /> */}
 export default function SideBar() {
+    let navigate = useNavigate()
+
+    const onLogout = () => {
+        localStorage.removeItem('code')
+        navigate('/login')
+    }
+
     return (
         <div className="gh__sideBar">
             <div className="gh__sideBar-profile">
@@ -71,7 +79,7 @@ export default function SideBar() {
                                     </li>
                                     <li>
                                         <RiTwitterFill className="twitter" size={20}/>
-                                        <span>@Dami_code</span>
+                                        <span style={{cursor:"pointer"}}>@Dami_code</span>
                                     </li>
                                 </ul>
                             </div>
@@ -80,7 +88,7 @@ export default function SideBar() {
                     </div>
                     <div className="gh__sideBar-profile__editable-achievementsCol"></div>
                     <div className="gh__sideBar-profile__editable-organizationsCol"></div>
-                    <button onClick={localStorage.removeItem('code')}>Logout</button>
+                    <button className="logoutBtn" onClick={onLogout}>Logout</button>
                 </div>
             </div>
         </div>

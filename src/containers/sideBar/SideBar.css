@@ -220,6 +220,15 @@
     vertical-align: top;
     display: inline-block;
 }
+.logoutBtn{
+    color: #ffffff;
+    padding: 12px;
+    background-color: var(--color-link-default);
+    width: 100%;
+    margin-top: 30px;
+    font-size: 15px;
+    border: none;
+}
 @media screen and (min-width:768px) {
     .d-none,
     .gh__sideBar-profile__editable-followColumn__area,

@@ -1,16 +1,21 @@
-import React, { useCallback, useRef, useState, useEffect } from "react";
+import React from "react";
 import GitHubLogin from "react-github-login";
+import {useNavigate} from "react-router-dom";
 import "./AuthLogin.css";
-import Home from "../../Home";
-import { LoginSocialGithub } from "reactjs-social-login";
-import { Icon } from "@iconify/react";
 
 const REDIRECT_URI = "http://localhost:3000/login/github/authorized";
 export default function AuthLogin() {
+  let navigate = useNavigate();
+
   const onSuccess = (response) => {
       localStorage.setItem("code", response.code)
+      navigate("/")
   };
-  const onFailure = (response) => console.error(response);
+
+  const onFailure = (response) => {
+    navigate("/login")
+    console.error(response)
+  }
 
 
   return (
@@ -25,21 +30,3 @@ export default function AuthLogin() {
       </div>
   );
 }
-
-
-
-
-{/* <p>Log in with</p>
-    <button>
-            <span>
-              <Icon
-                icon="icon-park:github"
-                className="gitIcon"
-                color="#ffffff"
-                width="16"
-                height="16"
-                inline={true}
-              />
-              GitHub
-            </span>
-          </button> */}

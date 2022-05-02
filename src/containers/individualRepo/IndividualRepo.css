@@ -76,6 +76,12 @@
 .aIcon{
     margin-right: 4px;
 }
+.special{
+    cursor:'pointer';
+}
+.special:hover{
+    color: var(--color-link-default);
+}
 .gh__oneRepo-right{
     display: flex !important;
     justify-content: space-around !important;

@@ -9,7 +9,9 @@ export default function IndividualRepo({
   lang_color,
   language,
   updatedTime,
-  starred, forked, licensed
+  starred,
+  forked,
+  licensed,
 }) {
   return (
     <li className="gh__oneRepo widthFull">
@@ -34,7 +36,7 @@ export default function IndividualRepo({
           </span>
           <a className="forked-a">
             <Icon
-                className="aIcon"
+              className="aIcon special"
               icon="octicon:star-24"
               color="#57606a"
               width="16"
@@ -45,7 +47,7 @@ export default function IndividualRepo({
           </a>
           <a className="forked-a">
             <Icon
-            className="aIcon"
+              className="aIcon special"
               icon="octicon:repo-forked-16"
               color="#57606a"
               width="16"
@@ -55,8 +57,15 @@ export default function IndividualRepo({
             2 {/*{forked}*/}
           </a>
           <span className="license">
-            <Icon icon="octicon:law-24" className="aIcon" color="#57606a" width="16" height="16" inline={true} />
-              MIT License
+            <Icon
+              icon="octicon:law-24"
+              className="aIcon"
+              color="#57606a"
+              width="16"
+              height="16"
+              inline={true}
+            />
+            MIT License
           </span>
           Updated
           <span className="updatedTime">{updatedTime}</span>

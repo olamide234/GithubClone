@@ -5,7 +5,6 @@ import { MainApp, NavBar, SideBar } from "./containers";
 export default function Home() {
     useEffect(() => {
         const code = localStorage.getItem('code')
-        console.log(code)
     }, []);
   return (
     <div className="App">
