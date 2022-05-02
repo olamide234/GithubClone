@@ -1,0 +1,242 @@
+.gh__sideBar{
+    grid-column: 1;
+    width: var(--Blueprint-sidebar-width);
+}
+.gh__sideBar-profile{
+    margin-top: -32px !important;
+}
+.gh__sideBar-profile__sticky{
+    position: fixed;
+    top: 0;
+    z-index: 90;
+    width: 233px;
+    word-break: break-all;
+    pointer-events: none;
+    opacity: 0;
+    transition: .2s;
+}
+.d-none{
+    display: none;
+}
+.gh__sideBar-profile__editable-dpUsername{
+    display: flex !important;
+    margin-bottom: 24px !important;
+    align-items: center !important;
+}
+.gh__sideBar-profile__editable-dpUsername .dp{
+    z-index: 4;
+    display: inline-block !important;
+    width: 16.66666666%;
+    flex-shrink: 0 !important;
+    position: relative !important;
+    margin-right: 16px !important;
+}
+.gh__sideBar-profile__editable-dpUsername .dp .profile_img{
+    display: inline-block;
+    flex-shrink: 0;
+    border-radius: 50%;
+    vertical-align: middle;
+    line-height: 1;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px var(--color-avatar-border);
+    background-color: var(--color-bg) !important;
+    border: 1px solid var(--color-border-default) !important;
+}
+.userStatus__container{
+    position: relative;
+    white-space: normal;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+.userStatus__container-absolute{
+    position: absolute;
+    display: flex !important;
+    bottom: 0;
+    left: 100%;
+    z-index: 2;
+    width: 38px;
+    height: 38px;
+    margin-bottom: 32px;
+    margin-left: -40px;
+}
+.userStatus__container-absolute__b{
+    display: flex !important;
+    align-items: center;
+    /* align-items: stretch; */
+}
+.userStatus__container-absolute__b-content{
+    line-height: 1.25 !important;
+    display: flex;
+    border-radius: 2em;
+    font-size: 12px !important;
+    padding: 8px !important;
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-border-default);
+    box-shadow: var(--color-shadow-small);
+    align-items: center !important;
+}
+.userStatus__container-absolute__b-content__emoji{
+    justify-content: center !important;
+    align-items: center !important;
+    flex-shrink: 0 !important;
+    display: flex;
+    margin-right: 0 !important;
+    height: 20px;
+    width: 20px;
+}
+.status{
+    min-width: 1ch;
+    line-height: 1;
+    vertical-align: -0.075em;
+    font-weight: 400;
+}
+.names{
+    position: sticky;
+    top: 0;
+    padding: 16px 0;
+    /* float: left !important; */
+    width: 100%;   
+}
+.names h1{
+    line-height: 1;
+    font-weight: 600;
+    font-size: 32px;
+    margin: 0;
+}
+.fullname{
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 500;
+    display: block;
+    overflow: hidden;
+}
+.nickname{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    opacity: .6;
+    color: var(--color-text);
+    display: block !important;
+}
+.gh__sideBar-profile__editable-followColumn{
+    display: flex !important;
+    flex-direction: column !important;
+}
+/* .gh__sideBar-profile__editable-followColumn__area{
+    order: 1 !important;
+} */
+.gh__sideBar-profile__editable-followColumn__area{
+    display: flex !important;
+    flex-direction: column !important;
+}
+/* .gh__sideBar-profile__editable-followColumn__area-edit{
+    display: flex !important;
+} */
+.gh__sideBar-profile__editable-followColumn__area-edit{
+    margin-bottom: 16px !important;
+}
+.gh__sideBar-profile__editable-followColumn__area-edit button{
+    /* font: inherit; */
+    overflow: visible;
+    margin: 0px;
+    /* text-transform: none; */
+    position: relative;
+    text-align: center;
+    width: 100%;
+    display: block;
+    appearance: button;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    padding: 5px 16px;
+    border: 1px solid;
+    border-radius: 6px;
+    /* border-image: initial; */
+    transition: color 80ms cubic-bezier(0.33, 1, 0.68, 1) 0s, background-color, box-shadow, border-color;
+    border-color: var(--color-avatar-border);
+    box-shadow: var(--color-shadow-small),var(--color-btn-inset-shadow);
+    background-color: var(--color-btn-bg);
+}
+.gh__sideBar-profile__editable-followColumn__desc{
+    display: flex !important;
+    flex-direction: column !important;
+}
+.gh__sideBar-profile__editable-followColumn__desc-comment{
+    overflow: hidden;
+    font-size: 16px !important;
+    margin-bottom: 16px !important;
+}
+.gh__sideBar-profile__editable-followColumn__desc-follows{
+    margin-top: 8px !important;
+    order: 1 !important;
+} 
+.gh__sideBar-profile__editable-followColumn__desc-follows div{
+    margin-bottom: 16px !important;
+}
+.gh__sideBar-profile__editable-followColumn__desc-follows .followers,
+.location, .twitter{
+    color: var(--color-text);
+    white-space: nowrap !important;
+    font-size: 15px;
+    margin-right: 5px;
+}
+.location, .twitter{
+    float: left;
+    fill: currentColor;
+    vertical-align: text-bottom;
+}
+.people{
+    display: inline-block;
+    overflow: visible !important;
+    fill: currentColor;
+    color: var(--color-text);
+    /* vertical-align: text-bottom !important; */
+}
+.followers span{
+    font-weight: 500 !important;
+    color: var(--color-text-default) !important;
+    margin: 0 3px;
+}
+.gh__sideBar-profile__editable-followColumn__desc-follows ul{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.gh__sideBar-profile__editable-followColumn__desc-follows li{
+    padding-top: 4px !important;
+    font-size: 14px;
+    /* padding-left: 24px; */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    max-width: 100%;
+    vertical-align: top;
+    display: inline-block;
+}
+@media screen and (min-width:768px) {
+    .d-none,
+    .gh__sideBar-profile__editable-followColumn__area,
+    .gh__sideBar-profile__editable-followColumn__desc {
+        display: block !important; 
+    }
+    .gh__sideBar-profile__editable-dpUsername {
+        display: block !important;
+        margin-bottom: 0 !important;
+    }
+    .gh__sideBar-profile__editable-dpUsername .dp {
+        width: 100%;
+        margin-right: 0 !important;
+    }
+    .gh__sideBar-profile__editable-followColumn__desc-follows{
+        margin-top: 0 !important;
+    } 
+}
+/* @media screen and (min-width:1012px) {
+} */

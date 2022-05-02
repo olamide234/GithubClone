@@ -1,0 +1,26 @@
+.gh__authLogin{
+    padding: 24px 40px;
+    width: 424px;
+    margin: 40vh auto;
+    text-align: center;
+}
+.gh__authLogin p{
+    font-size: 18px;
+    font-weight: 400;
+}
+.gh__authLogin button{
+    color: #ffffff;
+    padding: 12px;
+    background-color: var(--color-link-default);
+    width: 100%;
+    margin-top: 16px;
+    font-size: 15px;
+    border: none;
+}
+.gitIcon{
+    display: inline-block;
+    overflow: visible !important;
+    fill: currentColor;
+    color: #ffffff;
+    margin-right: 8px;
+}

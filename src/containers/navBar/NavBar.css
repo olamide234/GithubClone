@@ -1,0 +1,87 @@
+
+.gh__navBar{
+    margin-top: 2.4rem;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    /* z-index: 3; */
+    border-bottom: 1px solid var(--color-border);
+}
+.gh__navBar-in{
+    max-width: 1280px;
+}
+.gh__navBar-in__main-nav__content{
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    box-shadow: inset 0 -1px 0 var(--color-border-muted);
+    justify-content: space-between;
+}
+.box-shadow__none{
+    box-shadow: none;
+}
+.gh__navBar-in__main-nav__content-nv{
+    display: flex;
+    padding: 0 16px;
+}
+.gh__navBar-in__main-nav__content-nv a{
+    background-color: transparent;
+    padding: 8px 16px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 30px;
+    color: var(--color-text-default);
+    text-align: center;
+    white-space: nowrap;
+    border: 0;
+    border-bottom: 2px solid transparent;
+}
+.octicon{
+    overflow: visible !important;
+    margin-right: 8px; /*4px*/
+    fill: currentColor;
+    color: var(--octicon-color);
+    vertical-align: text-bottom !important;
+}
+#active__navigation{
+    font-weight: 600;
+    border-bottom-color: var(--color-border-active);
+    outline: 1px dotted transparent;
+    outline-offset: -8px;
+}
+.octicon-active{
+    overflow: visible !important;
+    margin-right: 8px; /*4px*/
+    fill: currentColor;
+    color: var(--color-text-default);
+    vertical-align: text-bottom !important;
+}
+.counter{
+    min-width: 2rem;
+    padding: 2px 6px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: center;
+    border: 1px solid var(--color-counter-border);
+    border-radius: 2em;
+
+    margin-left: 8px;
+    color: var(--color-text-default);
+    background-color: var(--color-neutral-muted);
+}
+@media screen and (min-width:544px) {
+    .gh__navBar-in__main-nav__content-nv{
+        padding: 0 40px;
+    }
+}
+@media screen and (min-width:768px) {
+    .overflow-hide{
+        overflow-x: hidden;
+    }
+}
+@media screen and (min-width:1012px) {
+    .gh__navBar-in__main-nav__content-nv{
+        padding: 0 16px;
+    }
+}

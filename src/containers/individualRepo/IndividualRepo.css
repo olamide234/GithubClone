@@ -1,0 +1,145 @@
+.gh__oneRepo{
+    display: flex !important;
+    padding: 24px 0 !important;
+    border-color: var(--color-border) !important;
+    border-bottom: 1px solid var(--color-border-default) !important;
+}
+.gh__oneRepo-left{
+    display: inline-block !important;
+    width: 83.3333333%;
+}
+.gh__oneRepo-left__title{
+    display: inline-block !important;
+    margin-bottom: 4px !important;
+}
+.gh__oneRepo-left__title h3 {
+    word-break: break-all !important;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.pubPriIndicator{
+    color: var(--color-text);
+    display: inline-block;
+    padding: 0 7px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    white-space: nowrap;
+    border: 1px solid var(--color-border-default);
+    border-radius: 2em;
+    margin-left: 8px !important;
+    margin-bottom: 4px !important;
+    vertical-align: middle !important;
+}
+.gh__oneRepo-left__description p{
+    display: inline-block !important;
+    padding-right: 24px !important;
+    margin-bottom: 8px !important;
+    color: var(--color-text) !important;
+    width: 74.99999997%;
+    margin-top: 0;
+    font-size: 14px;
+    opacity: .8;
+}
+.gh__oneRepo-left__tags{
+    font-size: 12px !important;
+    margin-top: 8px !important;
+    color: var(--color-text) !important;
+    opacity: .8;
+}
+.gh__oneRepo-left__tags .forked-a{
+    margin-right: 16px !important;
+    color: var(--color-text) !important;
+}
+.gh__oneRepo-left__tags-lang{
+    margin-right: 16px !important;
+    margin-left: 0 !important;
+}
+.language-color{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--color-primer-border-contrast);
+    border-radius: 50%;
+    margin-right: 4px;
+}
+.updatedTime,
+.license{
+    white-space: nowrap !important;
+    margin-left: 4px;
+    margin-right: 16px;
+}
+.aIcon{
+    margin-right: 4px;
+}
+.gh__oneRepo-right{
+    display: flex !important;
+    justify-content: space-around !important;
+    flex-direction: column !important;
+    width: 16.66666666%;
+}
+.gh__oneRepo-right__starContainer{
+    text-align: right !important;
+}
+.gh__oneRepo-right__starContainer-flex{
+    display: flex !important;
+    float: right !important;
+    vertical-align: middle;
+}
+.gh__oneRepo-right__starContainer-flex form {
+    display: block;
+    float: left;
+}
+.gh__oneRepo-right__starContainer-flex form button{
+    border-right-width: 0;
+    border-radius: 0;
+    border-bottom-left-radius: 6px !important;
+    border-top-left-radius: 6px !important;
+    position: relative;
+    float: left;
+    padding: 3px 12px;
+    font-size: 12px;
+    line-height: 20px;
+
+    text-transform: none;
+    overflow: visible;
+    margin: 0;
+}
+.starIcon{
+    overflow: visible !important;
+    margin-right: 8px; /*4px*/
+    fill: currentColor;
+    color: var(--color-text);
+    vertical-align: text-bottom !important;
+}
+.gh__oneRepo-right__starContainer-flex details {
+    position: relative !important;
+    float: left;
+    display: inline-block !important;
+}
+.gh__oneRepo-right__starContainer-flex details summary {
+    position: relative;
+    border-right-width: 1px;
+    border-radius: 0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 3px 8px !important;
+    float: none !important;
+    font-size: 12px;
+    line-height: 20px;
+}
+.dropdownArrow{
+    margin-right: 0 !important;
+}
+@media screen and(min-width:1012px) {
+    .gh__oneRepo-left{
+        width: 74.99999997%;
+    }
+    .gh__oneRepo-right{
+        width: 24.99999999%;
+    }
+}

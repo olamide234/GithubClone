@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+  html{
+    font-size: 10px;
+  }
+  body{
+    background: var(--color-bg);
+    font-family: var(--font-family);
+  }
+  .App {
+    /* text-align: center; */
+  }
+  .App__mainSession{
+    max-width: 1280px;
+  }
+  .section__padding{
+    padding: 0 1.6rem;
+  }
+  .section__margin{
+    margin: 0 auto;
+  }
+  .blueprint{
+    display: grid;
+    --Blueprint-sidebar-width: 220px;
+    --Blueprint-gutter: 16px;
+    grid-auto-flow: column;
+    grid-template-columns: auto 0 minmax(0, calc(100% - var(--Blueprint-sidebar-width) - var(--Blueprint-gutter)));
+    grid-gap: var(--Blueprint-gutter);
+  }
+  .imgLayout{
+    width: var(--Blueprint-sidebar-width);
+    grid-column: 1;
+  }
+  .mainLayout {
+    grid-column: 2/span 2;
+    min-width: 0;
+  }
+  .widthFull{
+    width: 100%;
+  }
+  a{
+    transition: 80ms cubic-bezier(0.33, 1, 0.68, 1);
+    transition-property: color,background-color,box-shadow,border-color;
+  }
+  a{
+    color: var(--color-link-default);
+    text-decoration: none;
+    background-color: transparent;
+  }
+  .detailing{
+    list-style: none;
+    transition: 80ms cubic-bezier(0.33, 1, 0.68, 1);
+    transition-property: color,background-color,box-shadow,border-color;
+  }
+  .btt{
+    color: var(--color-text-default);
+    background-color: var(--color-btn-bg);
+    border:  1px solid var(--color-avatar-border);
+    box-shadow: var(--color-shadow-small),var(--color-btn-inset-shadow);
+  
+    position: relative;
+    display: inline-block;
+    padding: 5px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 6px;
+    appearance: none;
+  }
+  @media screen and (min-width:544px) {
+    .blueprint{
+      --Blueprint-sidebar-width: 220px;
+    }
+  }
+  @media screen and (min-width:768px) {
+    .blueprint{
+      --Blueprint-sidebar-width: 256px;
+    }
+    .section__padding{
+      padding: 0 2.4rem;
+    }
+  }
+  @media screen and (min-width:1012px) {
+    .blueprint{
+      --Blueprint-sidebar-width: 296px;
+      --Blueprint-gutter: 24px;
+    }
+    .section__padding{
+      padding: 0 3.2rem;
+    }
+  }
