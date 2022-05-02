@@ -3,7 +3,7 @@ import GitHubLogin from "react-github-login";
 import {useNavigate} from "react-router-dom";
 import "./AuthLogin.css";
 
-const REDIRECT_URI = "http://localhost:3000/login/github/authorized";
+// const REDIRECT_URI = "https://olamz-githubclone.netlify.app/login/github/authorized";
 export default function AuthLogin() {
   let navigate = useNavigate();
 
@@ -25,7 +25,7 @@ export default function AuthLogin() {
           onSuccess={onSuccess}
           onFailure={onFailure}
           buttonText="Login with GitHub"
-          redirectUri={REDIRECT_URI}
+          redirectUri={process.env.REACT_APP_REDIRECT_URI}
         />
       </div>
   );

@@ -190,6 +190,12 @@
     fill: currentColor;
     vertical-align: text-bottom;
 }
+.twiLink{
+    cursor: pointer;
+} 
+.twiLink:hover{
+    color: var(--color-link-default);
+}
 .people{
     display: inline-block;
     overflow: visible !important;

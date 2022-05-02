@@ -79,7 +79,7 @@ export default function SideBar() {
                                     </li>
                                     <li>
                                         <RiTwitterFill className="twitter" size={20}/>
-                                        <span style={{cursor:"pointer"}}>@Dami_code</span>
+                                        <span className="twiLink">@Dami_code</span>
                                     </li>
                                 </ul>
                             </div>

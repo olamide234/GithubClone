@@ -51,7 +51,15 @@
 }
 .gh__oneRepo-left__tags .forked-a{
     margin-right: 16px !important;
-    color: var(--color-text) !important;
+    color: var(--color-text) ;
+    cursor:'pointer';
+}
+.special{
+    color: var(--color-text);
+}
+.gh__oneRepo-left__tags .forked-a:hover,
+.special:hover{
+    color: var(--color-link-default);
 }
 .gh__oneRepo-left__tags-lang{
     margin-right: 16px !important;
@@ -76,12 +84,7 @@
 .aIcon{
     margin-right: 4px;
 }
-.special{
-    cursor:'pointer';
-}
-.special:hover{
-    color: var(--color-link-default);
-}
+
 .gh__oneRepo-right{
     display: flex !important;
     justify-content: space-around !important;
@@ -117,7 +120,7 @@
 }
 .starIcon{
     overflow: visible !important;
-    margin-right: 8px; /*4px*/
+    margin-right: 8px;
     fill: currentColor;
     color: var(--color-text);
     vertical-align: text-bottom !important;

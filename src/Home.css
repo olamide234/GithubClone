@@ -11,8 +11,29 @@
     background: var(--color-bg);
     font-family: var(--font-family);
   }
-  .App {
-    /* text-align: center; */
+  .App__viewRepo{
+    padding: 24px 40px;
+    width: 424px;
+    margin: 30vh auto;
+    text-align: center;
+  }
+  .App__viewRepo h1{
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .App__viewRepo p{
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .App__viewRepo-btn{
+    color: #ffffff;
+    padding: 12px;
+    background-color: var(--color-link-default);
+    width: 100%;
+    margin-top: 16px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
   }
   .App__mainSession{
     max-width: 1280px;

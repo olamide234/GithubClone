@@ -38,7 +38,6 @@ export default function IndividualRepo({
             <Icon
               className="aIcon special"
               icon="octicon:star-24"
-              color="#57606a"
               width="16"
               height="16"
               inline={true}
@@ -49,7 +48,6 @@ export default function IndividualRepo({
             <Icon
               className="aIcon special"
               icon="octicon:repo-forked-16"
-              color="#57606a"
               width="16"
               height="16"
               inline={true}
